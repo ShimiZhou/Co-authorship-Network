@@ -1,5 +1,5 @@
 # --- preparing the network data: co-authors from 1990-2000 (follow the steps: https://bookdown.org/markhoff/social_network_analysis/your-first-network.html)
-edgelist_1990 = read.csv("/Users/zhoushimi/Desktop/co_authors1990_2000.csv")
+edgelist_1990 = read.csv("***.csv")
 install.packages("igraph", repos='http://cran.us.r-project.org')
 library("igraph")
 edgelist_1990 <- as.matrix(edgelist_1990)
