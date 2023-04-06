@@ -1,4 +1,4 @@
-edgelist_1990 = read.csv("/Users/zhoushimi/Desktop/co_authors1990_2000.csv")
+edgelist_1990 = read.csv("***.csv")
 library("igraph")
 edgelist_1990 <- as.matrix(edgelist_1990)
 coauthors_1990Network <- graph.edgelist(edgelist_1990, # the network object
@@ -11,9 +11,9 @@ n1990 <- coauthors_1990Network
 n1990
 summary(n1990)
 # Load in the attributes (gender) again
-gender <- read.csv("/Users/zhoushimi/Desktop/gender_1990!.csv", stringsAsFactors = F)
+gender <- read.csv("***.csv", stringsAsFactors = F)
 # load in the co-authorship edge list again
-edgelist_1990 = read.csv("/Users/zhoushimi/Desktop/co_authors1990_2000.csv")
+edgelist_1990 = read.csv("***.csv")
 # put them both in the network
 n1990 <-graph_from_data_frame(edgelist_1990, directed = F, vertices = gender)
 # look at the network
